@@ -381,6 +381,10 @@ footer {
   margin: 0 auto 20px;
   margin-top: 1.5rem;
 }
+.p-msg-contact {
+  margin-top: 1rem;
+  color: #bb2222;
+}
 .contact-form {
   text-align: center;
   margin: 30px auto;

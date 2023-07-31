@@ -1,0 +1,62 @@
+// Estilos Blog 
+
+.intro-blog {
+    text-align: left;
+
+    img {
+        .img-header-mixin();
+        margin-bottom: 2.5rem;
+    }
+    h2, p {
+        margin-bottom: 2rem;
+    }
+}
+
+.p-blog {
+    text-align: start;
+}
+
+.blog-post {
+    margin-bottom: 40px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.blog-post h3 {
+    font-family: "Russo One", sans-serif;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.blog-post p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+// MEDIAS QUERY //
+
+@media screen and (max-width: @phone) {
+    .header-img {
+        align-items: center;
+        width: 100%;
+    }
+
+    .intro-blog {
+        text-align: @center-text;
+        h2, p {
+            margin-bottom: 2rem;
+        }
+    }
+
+    .intro-blog,
+    .blog-posts {
+        padding-top: 1rem;
+        margin: 0 2rem;
+    }
+
+    .p-blog {
+        text-align: justify;
+    }
+}

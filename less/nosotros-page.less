@@ -1,0 +1,22 @@
+// Estilos Nosotros
+
+.btn-animation {
+    .btn-mixin();
+    .btn-hover-span-mixin();
+    .btn-active-mixin();
+}
+
+.btn-a-animation {
+    .btn-span-mixin();
+    color: #fff;
+}
+
+// MEDIAS QUERY //
+
+@media screen and (max-width: @phone) {
+    .btn-animation,
+    .btn-a-animation {
+        width: 100%;
+        text-align: @center-text;
+    }
+}

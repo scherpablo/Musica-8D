@@ -1,0 +1,44 @@
+// Estilos Contacto
+
+.intro-msg {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.p-msg {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto 20px;
+    margin-top: 1.5rem;
+}
+
+.span-click {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: green;
+}
+
+.btn-animation {
+    .btn-mixin();
+    .btn-hover-span-mixin();
+    .btn-active-mixin();
+    margin: 0 auto;
+}
+
+.btn-a-animation {
+    .btn-span-mixin();
+    color: #fff;
+}
+
+// MEDIAS QUERY //
+
+@media screen and (max-width: @phone) {
+    .intro-contact, .contact-form {
+        margin: 3rem 2rem;
+    }
+
+    .p-contact {
+        text-align: justify;
+    }
+}

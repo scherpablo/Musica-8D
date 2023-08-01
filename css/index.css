@@ -29,7 +29,7 @@
 }
 .btn-span-mixin {
   text-decoration: none;
-  background-color: #0f0f40;
+  background-color: #22283A;
   padding: 1.6rem 2.4rem;
   border-radius: 0.6rem;
   transition: 0.3s;
@@ -324,6 +324,29 @@ footer {
 .home .actual .actual-text p {
   margin-bottom: 2.6rem;
 }
+.home .actual .actual-text .btn-animation-one {
+  border: 0;
+  background-image: linear-gradient(150deg, #9500ff, #09f, #00DDFF);
+  border-radius: 0.8rem;
+  color: #fff;
+  display: flex;
+  font-size: 1.8rem;
+  padding: 0.3rem;
+  cursor: pointer;
+  transition: 0.3s;
+  transform: scale(0.9);
+}
+.home .actual .actual-text .btn-animation-one:hover a {
+  background: none;
+}
+.home .actual .actual-text .btn-a-animation-one {
+  text-decoration: none;
+  background-color: #22283A;
+  padding: 1.6rem 2.4rem;
+  border-radius: 0.6rem;
+  transition: 0.3s;
+  color: #fff;
+}
 .home .actual .actual-img {
   width: 46%;
   margin-left: 4%;
@@ -364,8 +387,8 @@ footer {
     order: -1;
     margin-bottom: 5rem;
   }
-  .home .btn,
-  .home .btn-span {
+  .home .btn-animation-one,
+  .home .btn-a-animation-one {
     width: 100%;
     text-align: center;
   }
@@ -380,10 +403,6 @@ footer {
   max-width: 600px;
   margin: 0 auto 20px;
   margin-top: 1.5rem;
-}
-.p-msg-contact {
-  margin-top: 1rem;
-  color: #bb2222;
 }
 .contact-form {
   text-align: center;
@@ -432,45 +451,19 @@ footer {
 }
 .btn-a-animation {
   text-decoration: none;
-  background-color: #0f0f40;
+  background-color: #22283A;
   padding: 1.6rem 2.4rem;
   border-radius: 0.6rem;
   transition: 0.3s;
   color: #fff;
 }
 @media screen and (max-width: 600px) {
-  .intro-contact,
-  .contact-form {
+  .intro-contact {
     margin: 3rem 2rem;
   }
   .p-contact {
     text-align: justify;
   }
-}
-.btn-animation {
-  border: 0;
-  background-image: linear-gradient(150deg, #9500ff, #09f, #00DDFF);
-  border-radius: 0.8rem;
-  color: #fff;
-  display: flex;
-  font-size: 1.8rem;
-  padding: 0.3rem;
-  cursor: pointer;
-  transition: 0.3s;
-  transform: scale(0.9);
-}
-.btn-animation:hover a {
-  background: none;
-}
-.btn-a-animation {
-  text-decoration: none;
-  background-color: #0f0f40;
-  padding: 1.6rem 2.4rem;
-  border-radius: 0.6rem;
-  transition: 0.3s;
-  color: #fff;
-}
-@media screen and (max-width: 600px) {
   .btn-animation,
   .btn-a-animation {
     width: 100%;
@@ -511,23 +504,8 @@ footer {
   border-radius: 4px;
   font-size: 16px;
 }
-.form-group button {
-  display: inline-block;
-  background-color: #1e90ff;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-.form-group button:hover {
-  background-color: #007bff;
-}
 @media screen and (max-width: 600px) {
-  .intro-register,
-  .register-form {
+  .intro-register {
     margin: 3rem 2rem;
   }
   .p-register {
@@ -585,56 +563,6 @@ footer {
     margin: 0 2rem;
   }
   .p-blog {
-    text-align: justify;
-  }
-}
-.intro-msg {
-  text-align: center;
-  padding-top: 2rem;
-}
-.p-msg {
-  font-size: 18px;
-  line-height: 1.6;
-  max-width: 600px;
-  margin: 0 auto 20px;
-  margin-top: 1.5rem;
-}
-.span-click {
-  font-size: 2.5rem;
-  font-weight: bold;
-  color: green;
-  text-decoration: none;
-}
-.btn-animation {
-  border: 0;
-  background-image: linear-gradient(150deg, #9500ff, #09f, #00DDFF);
-  border-radius: 0.8rem;
-  color: #fff;
-  display: flex;
-  font-size: 1.8rem;
-  padding: 0.3rem;
-  cursor: pointer;
-  transition: 0.3s;
-  transform: scale(0.9);
-  margin: 0 auto;
-}
-.btn-animation:hover a {
-  background: none;
-}
-.btn-a-animation {
-  text-decoration: none;
-  background-color: #0f0f40;
-  padding: 1.6rem 2.4rem;
-  border-radius: 0.6rem;
-  transition: 0.3s;
-  color: #fff;
-}
-@media screen and (max-width: 600px) {
-  .intro-contact,
-  .contact-form {
-    margin: 3rem 2rem;
-  }
-  .p-contact {
     text-align: justify;
   }
 }

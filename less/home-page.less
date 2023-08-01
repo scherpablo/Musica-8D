@@ -2,7 +2,9 @@
 
 .home {
   .intro {
-    img {
+    width: 100%;
+    
+    .header-img {
       .img-header-mixin();
     }
 
@@ -43,12 +45,13 @@
   .actual {
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
-    padding: 50px 60px;
+    padding: 2rem 0;
     display: flex;
     justify-content: center;
 
     .actual-text {
-      width: 50%;
+      width: 100%;
+      padding: 1rem;
 
       h3 {
         margin-bottom: 1rem;
@@ -71,8 +74,8 @@
     }
 
     .actual-img {
-      width: 46%;
-      margin-left: 4%;
+      width: 100%;
+      padding: 1rem;
 
       img {
         width: 100%;
@@ -85,25 +88,15 @@
   // MEDIAS QUERY //
 
   @media screen and (max-width: @phone) {
-    .header-img {
-      align-items: center;
-      width: 90%;
-    }
-
     .intro h2,
     .musica-nueva,
     .actual-text h3 {
       text-align: @center-text;
     }
 
-    // .tecnologia,
-    // .ondas {
-    //   display: none;
-    // }
-
     .intro,
     .musica-nueva p {
-      text-align: @cjustify-text;
+      text-align: @justify-text;
       padding: 1rem;
     }
 
@@ -116,14 +109,20 @@
     }
 
     .actual {
-      flex-direction: column;
-      width: 160%;
-      text-align: @cjustify-text;
+      display: flex;
+      flex-direction: column-reverse;
     }
 
-    .actual-img {
-      order: -1;
-      margin-bottom: 5rem;
+    .actual-text {
+      text-align: @justify-text;
+    }
+
+    .actual-text h3 {
+      margin-bottom: 2rem !important;
+    }
+
+    .actual-text, .actual-img {
+      padding: 3rem !important;
     }
 
     .btn-animation-one,

@@ -58,9 +58,16 @@
         margin-bottom: 2.6rem;
       }
 
-      // .btn{
-        
-      // }
+      .btn-animation-one {
+        .btn-mixin();
+        .btn-hover-span-mixin();
+        .btn-active-mixin();
+      }
+
+      .btn-a-animation-one {
+        .btn-span-mixin();
+        color: #fff;
+      }
     }
 
     .actual-img {
@@ -76,24 +83,32 @@
   }
 
   // MEDIAS QUERY //
-  
+
   @media screen and (max-width: @phone) {
     .header-img {
       align-items: center;
       width: 90%;
     }
 
-    .intro h2, .musica-nueva, .actual-text h3 {
+    .intro h2,
+    .musica-nueva,
+    .actual-text h3 {
       text-align: @center-text;
     }
 
-    .intro, .musica-nueva p {
+    // .tecnologia,
+    // .ondas {
+    //   display: none;
+    // }
+
+    .intro,
+    .musica-nueva p {
       text-align: @cjustify-text;
       padding: 1rem;
     }
 
     .music-images {
-      .music-images-mobile(); 
+      .music-images-mobile();
     }
 
     .music-images img {
@@ -110,11 +125,11 @@
       order: -1;
       margin-bottom: 5rem;
     }
-    
-    .btn, .btn-span {
-      width: 100%;
-      text-align: @center-text;
+
+    .btn-animation-one,
+    .btn-a-animation-one {
+        width: 100%;
+        text-align: @center-text;
     }
   }
 }
-

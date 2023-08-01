@@ -13,11 +13,6 @@
     margin-top: 1.5rem;
 }
 
-.p-msg-contact {
-    margin-top: 1rem;
-    color: rgb(187, 34, 34);
-}
-
 .contact-form {
     text-align: center;
     margin: 30px auto;
@@ -67,11 +62,17 @@
 // MEDIAS QUERY //
 
 @media screen and (max-width: @phone) {
-    .intro-contact, .contact-form {
+    .intro-contact {
         margin: 3rem 2rem;
     }
 
     .p-contact {
         text-align: justify;
+    }
+
+    .btn-animation,
+    .btn-a-animation {
+        width: 100%;
+        text-align: @center-text;
     }
 }
